@@ -6,6 +6,10 @@
   "main": "dist/vue-client-notpaid.umd.cjs",
   "module": "dist/vue-client-notpaid.js",
   "types": "dist/types/index.d.ts",
+  "repository": {
+    "url": "https://github.com/Dantescur/VueClientNotPaid",
+    "type": "git"
+  },
   "files": [
     "dist/types/index.d.ts",
     "dist/vue-client-notpaid.js",
