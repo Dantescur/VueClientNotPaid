@@ -1,5 +1,9 @@
 import { App } from "vue";
-import { NotPaidOptions } from "./types";
+
+interface NotPaidOptions {
+  dueDate: string;
+  deadline: number;
+}
 
 const VueClientNotPaid = {
   install(app: App, options: NotPaidOptions): void {
