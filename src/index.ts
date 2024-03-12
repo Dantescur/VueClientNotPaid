@@ -5,13 +5,21 @@ interface NotPaidOptions {
   deadline: number;
 }
 
-const VueClientNotPaid = {
-  install(app: App, options: NotPaidOptions): void {
+class VueClientNotPaid {
+  private dueDate: string;
+  private deadline: number;
+
+  constructor(options: NotPaidOptions) {
+    this.dueDate = options.dueDate;
+    this.deadline = options.deadline;
+  }
+
+  public install(app: App): void {
     const calculateOpacity = (): number => {
       const currentDate = new Date();
-      const dueDate = new Date(options.dueDate);
+      const dueDate = new Date(this.dueDate);
       const deadlineDate = new Date(
-        dueDate.getTime() + options.deadline * 24 * 60 * 60 * 1000,
+        dueDate.getTime() + this.deadline * 24 * 60 * 60 * 1000,
       );
 
       if (currentDate > deadlineDate) {
@@ -19,10 +27,11 @@ const VueClientNotPaid = {
       } else if (currentDate > dueDate) {
         const dayPastDue =
           (currentDate.getTime() - dueDate.getTime()) / (1000 * 60 * 60 * 24);
-        return (options.deadline - dayPastDue) / options.deadline;
+        return (this.deadline - dayPastDue) / this.deadline;
       }
       return 1;
     };
+
     app.mixin({
       mounted() {
         this.$nextTick(() => {
@@ -30,7 +39,7 @@ const VueClientNotPaid = {
         });
       },
     });
-  },
-};
+  }
+}
 
 export default VueClientNotPaid;
