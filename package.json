@@ -7,7 +7,7 @@
   "module": "dist/vue-client-notpaid.js",
   "types": "dist/types/index.d.ts",
   "repository": {
-    "url": "https://github.com/Dantescur/VueClientNotPaid",
+    "url": "git+https://github.com/Dantescur/VueClientNotPaid.git",
     "type": "git"
   },
   "files": [
