@@ -66,4 +66,4 @@ To see `vue-client-notpaid` in action, visit this [link](https://vue-client-notp
 
 If you find this plugin helpful, consider starring the repository to show your support. Any donations to support the development are appreciated!
 
-[![Star on GitHub](https://img.shields.io/github/stars/Dantescur/vue-client-notpaid.svg?style=social)](https://github.com/your-username/vue-plugin-notpaid/stargazers)
+[![Star on GitHub](https://img.shields.io/github/stars/Dantescur/vue-client-notpaid.svg?style=social)](https://github.com/Dantescur/vue-client-notpaid/stargazers)
