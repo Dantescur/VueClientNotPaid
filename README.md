@@ -33,9 +33,9 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import VueClientNotPaid from "vue-client-notpaid";
 
-const app = createApp(App)
+const app = createApp(App);
 
-app.use(VuePluginNotPaid, { dueDate: "YYYY-MM-DD", deadline: 60 });
+app.use(VueClientNotPaid, { dueDate: "YYYY-MM-DD", deadline: 60 });
 ```
 
 Now you can access the $opacity property at any part of your App, for example in App.vue:
