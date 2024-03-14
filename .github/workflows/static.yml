@@ -37,11 +37,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           # Archive the entire "example" folder
-          name: example-artifact
           path: example
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          # Specify the name of the artifact to deploy
-          artifact: example-artifact
+          token: ${{ secrets.GITHUB_TOKEN }}
