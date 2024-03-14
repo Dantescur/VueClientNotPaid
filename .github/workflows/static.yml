@@ -33,11 +33,12 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Archive artifact
+        uses: actions/upload-artifact@v4
         with:
-          # Upload content from the "example" folder
-          path: 'example'
+          # Archive the entire "example" folder
+          name: example
+          path: example
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
