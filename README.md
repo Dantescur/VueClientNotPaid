@@ -1,11 +1,11 @@
-# vue-plugin-notpaid
+# vue-client-notpaid
 
-![npm](https://img.shields.io/npm/v/vue-plugin-notpaid)
-![license](https://img.shields.io/npm/l/vue-plugin-notpaid)
-![size](https://img.shields.io/bundlephobia/min/vue-plugin-notpaid)
-![downloads](https://img.shields.io/npm/dw/vue-plugin-notpaid)
+![npm](https://img.shields.io/npm/v/vue-client-notpaid)
+![license](https://img.shields.io/npm/l/vue-client-notpaid)
+![size](https://img.shields.io/bundlephobia/min/vue-client-notpaid)
+![downloads](https://img.shields.io/npm/dw/vue-client-notpaid)
 
-`vue-plugin-notpaid` is a Vue.js plugin that fades your website's content progressively until it becomes completely transparent, based on the payment due date and deadline. It's inspired by the [not-paid](https://github.com/kleampa/not-paid) JavaScript project.
+`vue-client-notpaid` is a Vue.js plugin that fades your website's content progressively until it becomes completely transparent, based on the payment due date and deadline. It's inspired by the [not-paid](https://github.com/kleampa/not-paid) JavaScript project.
 
 ## Features
 
@@ -30,10 +30,13 @@ yarn add vue-client-notpaid
 Import `vue-client-notpaid` in your main app file:
 
 ```javascript
-import Vue from "vue";
+import { createApp } from "vue";
+import App from "./App.vue";
 import VueClientNotPaid from "vue-client-notpaid";
 
-Vue.use(VuePluginNotPaid, { dueDate: "YYYY-MM-DD", deadline: 60 });
+const app = createApp(App)
+
+app.use(VuePluginNotPaid, { dueDate: "YYYY-MM-DD", deadline: 60 });
 ```
 
 Now you can access the $opacity property at any part of your App, for example in App.vue:
