@@ -28,4 +28,10 @@ const VueClientNotPaid = {
   },
 };
 
+declare module "@vue/runtime-core" {
+  interface ComponentCustomProperties {
+    $opacity: number;
+  }
+}
+
 export default VueClientNotPaid;
