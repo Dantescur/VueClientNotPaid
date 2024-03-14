@@ -51,7 +51,7 @@ Now you can access the $opacity property at any part of your App, for example in
 
 ## Demo
 
-To see `vue-client-notpaid` in action, visit this [link](#).
+To see `vue-client-notpaid` in action, visit this [link](https://vue-client-notpaid.surge.sh).
 
 ## License
 
