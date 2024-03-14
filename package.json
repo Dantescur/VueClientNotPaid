@@ -1,9 +1,8 @@
 {
   "name": "vue-client-notpaid",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
-  "main": "dist/vue-client-notpaid.umd.cjs",
   "module": "dist/vue-client-notpaid.js",
   "types": "dist/types/index.d.ts",
   "repository": {
@@ -11,9 +10,7 @@
     "type": "git"
   },
   "files": [
-    "dist/types/index.d.ts",
-    "dist/vue-client-notpaid.js",
-    "dist/vue-client-notpaid.umd.cjs"
+    "dist"
   ],
   "scripts": {
     "build": "vite build && vue-tsc --declaration --emitDeclarationOnly"
@@ -21,7 +18,11 @@
   "dependencies": {
     "vue": "^3.4.15"
   },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
   "devDependencies": {
+    "@types/node": "^20.11.19",
     "@vitejs/plugin-vue": "^5.0.3",
     "typescript": "^5.2.2",
     "vite": "^5.1.0",
