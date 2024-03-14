@@ -1,7 +1,6 @@
 # vue-client-notpaid
 
 ![npm](https://img.shields.io/npm/v/vue-client-notpaid)
-![license](https://img.shields.io/npm/l/vue-client-notpaid)
 ![size](https://img.shields.io/bundlephobia/min/vue-client-notpaid)
 ![downloads](https://img.shields.io/npm/dw/vue-client-notpaid)
 
