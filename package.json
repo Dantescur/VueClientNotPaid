@@ -1,7 +1,7 @@
 {
   "name": "vue-client-notpaid",
   "private": false,
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "module": "dist/vue-client-notpaid.js",
   "types": "dist/types/index.d.ts",
