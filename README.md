@@ -27,13 +27,19 @@ yarn add vue-client-notpaid
 
 ## Usage
 
-Import `vue-client-notpaid` in your main Vue.js file:
+Import `vue-client-notpaid` in your main app file:
 
 ```javascript
 import Vue from "vue";
 import VueClientNotPaid from "vue-client-notpaid";
 
 Vue.use(VuePluginNotPaid, { dueDate: "YYYY-MM-DD", deadline: 60 });
+```
+
+Now you can access the $opacity property at any part of your App, for example in App.vue:
+
+```vue
+<div :style="{ opacity: $opacity }"></div>
 ```
 
 ## Options
