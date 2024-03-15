@@ -10,7 +10,8 @@
     "type": "git"
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "build": "vite build && vue-tsc --declaration --emitDeclarationOnly"
