@@ -1,10 +1,11 @@
 {
   "name": "vue-client-notpaid",
   "private": false,
-  "version": "1.0.6",
+  "version": "1.0.7",
   "type": "module",
-  "module": "dist/vue-client-notpaid.js",
-  "types": "dist/types/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "repository": {
     "url": "git+https://github.com/Dantescur/VueClientNotPaid.git",
     "type": "git"
@@ -14,7 +15,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "vite build && vue-tsc --declaration --emitDeclarationOnly"
+    "build": "tsup"
   },
   "dependencies": {
     "vue": "^3.4.15"
@@ -26,6 +27,7 @@
     "@types/node": "^20.11.19",
     "@vitejs/plugin-vue": "^5.0.3",
     "@vue/runtime-core": "^3.4.19",
+    "tsup": "^8.0.2",
     "typescript": "^5.2.2",
     "vite": "^5.1.0",
     "vue-tsc": "^1.8.27"
